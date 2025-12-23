@@ -1,3 +1,6 @@
-build:
-  environmentVariables:
-    NODE_ENV: production
+env:
+  - variable: TEST_VARIABLE
+    value: 'it_production_good'
+    availability:
+      - BUILD
+      - RUNTIME
