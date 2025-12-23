@@ -38,7 +38,7 @@ export default function Home({ testVariable }: { testVariable: string }) {
 }
 
 export async function getStaticProps() {
-  const testVariable = process.env.TEST_VARIABLE;
+  const testVariable = process.env.TEST_VARIABLE || "env not working";
   return {
     props: {
       testVariable,
